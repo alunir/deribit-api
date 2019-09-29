@@ -13,7 +13,7 @@ import (
 
 	"github.com/chuckpreslar/emission"
 	"github.com/sourcegraph/jsonrpc2"
-	"github.com/sumorf/deribit-api/models"
+	"github.com/jimako1989/deribit-api/models"
 	"nhooyr.io/websocket"
 )
 
