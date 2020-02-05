@@ -2,17 +2,20 @@ package deribit
 
 import (
 	"encoding/json"
-	"github.com/stretchr/testify/assert"
-	"github.com/jimako1989/deribit-api/models"
+	"fmt"
 	"log"
+	"os"
 	"testing"
+
+	"github.com/jimako1989/deribit-api/models"
+	"github.com/stretchr/testify/assert"
 )
 
 func newClient() *Client {
 	cfg := &Configuration{
 		Addr:          TestBaseURL,
-		ApiKey:        "AsJTU16U",
-		SecretKey:     "mM5_K8LVxztN6TjjYpv_cJVGQBvk4jglrEpqkw1b87U",
+		ApiKey:        os.Getenv("TEST_DERIBIT_KEY"),
+		SecretKey:     os.Getenv("TEST_DERIBIT_SECRET_KEY"),
 		AutoReconnect: true,
 		DebugMode:     true,
 	}
@@ -117,7 +120,7 @@ func TestClient_Buy(t *testing.T) {
 		t.Error(err)
 		return
 	}
-	t.Logf("%#v", result)
+	fmt.Printf("NEW ORDER: %#v", result)
 }
 
 func TestJsonOmitempty(t *testing.T) {
