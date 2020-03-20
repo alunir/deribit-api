@@ -2,7 +2,7 @@ package deribit
 
 import (
 	jsoniter "github.com/json-iterator/go"
-	"github.com/jimako1989/deribit-api/models"
+	"github.com/alunir/deribit-api/models"
 	"log"
 	"strings"
 )

@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jimako1989/deribit-api/models"
+	"github.com/alunir/deribit-api/models"
 	"github.com/stretchr/testify/assert"
 )
 

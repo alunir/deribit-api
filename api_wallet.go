@@ -1,6 +1,6 @@
 package deribit
 
-import "github.com/jimako1989/deribit-api/models"
+import "github.com/alunir/deribit-api/models"
 
 func (c *Client) CancelTransferByID(params *models.CancelTransferByIDParams) (result models.Transfer, err error) {
 	err = c.Call("private/cancel_transfer_by_id", params, &result)

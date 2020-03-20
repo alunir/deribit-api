@@ -9,8 +9,8 @@ V2 API Documentation: https://docs.deribit.com/v2/
 package main
 
 import (
-	"github.com/jimako1989/deribit-api"
-	"github.com/jimako1989/deribit-api/models"
+	"github.com/alunir/deribit-api"
+	"github.com/alunir/deribit-api/models"
 	"log"
 )
 
